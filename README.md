@@ -28,7 +28,8 @@ Secure Download:
    Request:
    curl -X POST http://localhost:3000/api/purchase-report \
     -H "Content-Type: application/json" \
-    -d '{"userId": 1, "productId": 101}'
+    -d '{"userId": 1001, "productId": 101}'
+   ![alt text](image.png)
 
    Response:
    {
@@ -42,6 +43,7 @@ Secure Download:
 
    curl "http://localhost:3000/api/download-report?token=yourGeneratedToken"
    If the token is valid and the purchase is confirmed, the PDF file will be downloaded.
+   ![alt text](image-1.png)
 
 5. Unit Testing
    To run the unit tests:
